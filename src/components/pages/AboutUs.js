@@ -1,11 +1,13 @@
 import React from 'react'
 import AboutSection from '../AboutSection';
+import BenefitsSections from '../BenefitsSections';
 
 const AboutUs = () => {
   return (
-    <div>
+    <>
       <AboutSection />
-    </div>
+      <BenefitsSections />
+    </>
   )
 }
 
