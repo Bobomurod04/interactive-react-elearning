@@ -1,8 +1,9 @@
+import AboutUs from "./components/pages/AboutUs";
 
 function App() {
   return (
     <div className="App">
-      <h1>E-Learning</h1>
+      <AboutUs />
     </div>
   );
 }
