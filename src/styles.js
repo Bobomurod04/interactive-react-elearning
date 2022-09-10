@@ -10,6 +10,9 @@ export const About = styled.div`
 `;
 
 export const Description = styled.div`
+h2 {
+  color: #fff;
+}
   flex: 1;
   padding-right: 5rem;
 `;

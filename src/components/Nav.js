@@ -1,23 +1,29 @@
-import React from 'react';
-import styled from 'styled-components';
-import Logo from '../images/logo.png';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import Logo from '../images/logo.png'
 
 const Nav = () => {
   return (
     <StyledNav>
-      <img src = {Logo} alt="Logo Image" />
-      {/* <h1>
-        <a href="#" id = "logo">e-Learning</a>
-        <img src = {Logo} alt="Logo Image" />
-      </h1> */}
+      <Link to = '/'>
+        <img src={Logo} alt="Logo Image" />
+      </Link>
+      
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Kurse</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li>
+          <Link to = '/'>About</Link>
+        </li>
+        <li>
+          <Link to = '/courses'>Courses</Link>
+        </li>
+        <li>
+          <Link to = '/contact'>Contact</Link>
+        </li>
       </ul>
     </StyledNav>
   )
-};
+}
 
 const StyledNav = styled.nav`
   min-height: 10vh;
@@ -35,7 +41,7 @@ const StyledNav = styled.nav`
     display: flex;
     list-style: none;
   }
-/* 
+  /* 
   #logo {
     font-weight: lighter;
     font-size: 1.5rem;
@@ -50,7 +56,6 @@ const StyledNav = styled.nav`
       font-weight: 500;
     }
   }
+`
 
-`;
-
-export default Nav;
+export default Nav
