@@ -1,4 +1,4 @@
-import GlobalStyle from "./components/GobalStyle";
+import GlobalStyle from "./components/GlobalStyle";
 import AboutUs from "./components/pages/AboutUs";
 
 function App() {

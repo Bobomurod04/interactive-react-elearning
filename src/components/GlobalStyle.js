@@ -8,15 +8,16 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: #2a2e35;
+    font-family: 'SF Pro Display', sans-serif;    
   }
 
   button {
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #ffe45c;
+    background-color: #30bee1;
     padding: 1rem 2rem;
-    border: 1px solid #ffe45c;
+    border: 1px solid #30bee1;
     border-radius: 0.75rem;
     color: #2a2e35;
     transition: all 0.3s linear;
@@ -39,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   span {
-    color: #ffe45c;
+    color: #30bee1;
     font-weight: bold;
   }
   a {
@@ -54,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
 
-`
+`;
 
 
 export default GlobalStyle;
