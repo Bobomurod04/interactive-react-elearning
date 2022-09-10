@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
   }
   h4 {
     font-weight: bold;
+    font-size: 2rem;
   }
 
   span {
@@ -45,6 +46,8 @@ const GlobalStyle = createGlobalStyle`
   }
   a {
     font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
   }
 
   p {

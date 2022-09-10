@@ -42,6 +42,7 @@ const Benefits = styled(About)`
     width: 70%;
     clip-path: polygon(0 10%, 100% 0, 100% 91%, 0 100%);
     border-left: 4px solid #30bee1;
+    border-right: 4px solid #30bee1;
   }
 `
 
