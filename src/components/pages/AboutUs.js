@@ -5,6 +5,7 @@ import FaqSection from '../FaqSection'
 //Animations for
 import { motion } from 'framer-motion'
 import { pageAnimation } from '../../animation'
+import Testimonials from '../Testimonials'
 
 const AboutUs = () => {
   return (
@@ -17,6 +18,7 @@ const AboutUs = () => {
       <AboutSection />
       <BenefitsSections />
       <FaqSection />
+      <Testimonials />
     </motion.div>
   )
 }

@@ -78,4 +78,42 @@ export const CourseState = () => {
       ] ,
     } ,
   ] ;
-} ;
+};
+
+export const testimonials = [
+    {
+        id: 1,
+        name: "Diana Ayi",
+        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptas totam minus ut amet voluptatum dolores incidunt quis possimus reprehenderit, quod consectetur, enim fuga optio dignissimos veniam quasi ipsa itaque!",
+        job: "Student",
+        avatar: require("./images/avatar1.jpg")
+    },
+    {
+        id: 2,
+        name: "Daniel Vinyo",
+        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptas totam minus ut amet voluptatum dolores incidunt quis possimus reprehenderit, quod consectetur, enim fuga optio dignissimos veniam quasi ipsa itaque!",
+        job: "Software Egineer",
+        avatar: require("./images/avatar2.jpg")
+    },
+    {
+        id: 3,
+        name: "Edem Quist",
+        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptas totam minus ut amet voluptatum dolores incidunt quis possimus reprehenderit, quod consectetur, enim fuga optio dignissimos veniam quasi ipsa itaque!",
+        job: "University Lecturer",
+        avatar: require("./images/avatar3.jpg")
+    },
+    {
+        id: 4,
+        name: "Grace Lavoe",
+        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptas totam minus ut amet voluptatum dolores incidunt quis possimus reprehenderit, quod consectetur, enim fuga optio dignissimos veniam quasi ipsa itaque!",
+        job: "Talking Parrot",
+        avatar: require("./images/avatar4.jpg")
+    },
+    {
+        id: 5,
+        name: "Nana Yaa Dankwa",
+        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptas totam minus ut amet voluptatum dolores incidunt quis possimus reprehenderit, quod consectetur, enim fuga optio dignissimos veniam quasi ipsa itaque!",
+        job: "Pharmacist",
+        avatar: require("./images/avatar5.jpg")
+    }
+]

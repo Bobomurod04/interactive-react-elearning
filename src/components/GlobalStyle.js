@@ -18,8 +18,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #30bee1;
     padding: 1rem 2rem;
     border: 1px solid #30bee1;
-    border-radius: 0.75rem;
-    color: #2a2e35;
+    border-radius: 0.25rem;
     transition: all 0.3s linear;
     &:hover {
       background-color: transparent;

@@ -49,7 +49,7 @@ const StyledCourses = styled(motion.div)`
     padding-bottom: 2rem;
     font-size: 3rem;
   }
-`
+`;
 const Course = styled.div`
   padding-bottom: 10rem;
   .line {
@@ -59,9 +59,7 @@ const Course = styled.div`
   }
   img {
     width: 70%;
-    /* height: 70vh; */
-    /* object-fit: cover; */
   }
-`
+`;
 
 export default Courses

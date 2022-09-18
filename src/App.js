@@ -1,5 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { Switch, Route, useLocation } from 'react-router-dom';
+import Footer from './components/Footer';
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./components/Nav";
 import AboutUs from "./components/pages/AboutUs";
@@ -28,7 +29,8 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-      </AnimatePresence>     
+      </AnimatePresence>    
+      <Footer /> 
     </div>
   );
 }

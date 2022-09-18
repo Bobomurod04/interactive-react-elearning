@@ -108,4 +108,4 @@ const StyledAward = styled.div`
 
 `;
 
-export default CourseDetail
+export default CourseDetail;

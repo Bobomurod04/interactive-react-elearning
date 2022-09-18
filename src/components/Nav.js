@@ -1,24 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components'
 import Logo from '../images/logo.png'
+import { motion } from 'framer-motion'
 
 const Nav = () => {
+  const {pathname} = useLocation();
   return (
     <StyledNav>
-      <Link to = '/'>
+      <Link to="/">
         <img src={Logo} alt="Logo Image" />
       </Link>
-      
       <ul>
         <li>
-          <Link to = '/'>About</Link>
+          <Link to="/">About</Link>
+          <Line
+            transition={{ duration: 1.0 }}
+            initial={{ width: "0%" }}
+            animate = {{ width: pathname==="/" ? "57%" : "0%" }}
+          />
         </li>
         <li>
-          <Link to = '/courses'>Courses</Link>
+          <Link to="/courses">Courses</Link>
+          <Line
+            transition={{ duration: 1.0 }}
+            initial={{ width: "0%" }}
+            animate = {{ width: pathname==="/courses" ? "54%" : "0%" }}
+          />
         </li>
         <li>
-          <Link to = '/contact'>Contact</Link>
+          <Link to="/contact">Contact</Link>
+          <Line
+            transition={{ duration: 1.0 }}
+            initial={{ width: "0%" }}
+            animate = {{ width: pathname==="/contact" ? "55%" : "0%" }}
+          />
         </li>
       </ul>
     </StyledNav>
@@ -41,11 +57,6 @@ const StyledNav = styled.nav`
     display: flex;
     list-style: none;
   }
-  /* 
-  #logo {
-    font-weight: lighter;
-    font-size: 1.5rem;
-  } */
 
   li {
     padding-left: 5rem;
@@ -55,7 +66,18 @@ const StyledNav = styled.nav`
       font-size: 1.25rem;
       font-weight: 500;
     }
+    .active {
+      color: crimson;
+    }
   }
 `
+const Line = styled(motion.div)`
+  height: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: orange;
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+`;
 
-export default Nav
+export default Nav;
